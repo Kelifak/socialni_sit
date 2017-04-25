@@ -1,351 +1,361 @@
 <?xml version='1.0' encoding='UTF-8' ?> 
 <!-- was: no XML declaration present -->
-<!-- Odkaz na github: https://github.com/Kelifak/socialni_sit/blob/master/semestralka_Karim_Kelifa.xsd-->
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="socialni_sit">
-    <xs:annotation>
-      <xs:documentation>Odkaz na github: https://github.com/Kelifak/socialni_sit/blob/master/semestralka_Karim_Kelifa.xsd</xs:documentation>
-    </xs:annotation>
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="ucet" maxOccurs="unbounded" minOccurs="0"> <!-- Prihlaseny uzivatel --> 
-          <xs:complexType>
+    <xs:element name="socialni_sit">
+        <xs:annotation>
+            <xs:documentation>https://github.com/Kelifak/socialni_sit/blob/master/semestralka_Karim_Kelifa.xsd</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
             <xs:sequence>
-              <xs:element name="uzivatel">
-                <xs:annotation>
-                </xs:annotation>
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element type="char" name="uzivatelske_jmeno"/>
-                    <xs:element type="mail" name="email"/>
-                    <xs:element type="jaz" name="jazyk"/>
-                    <xs:element type="xs:string" name="zona"/>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element name="nastaveni"> 
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="obecne"> <!-- Obecné nastavení --> 
-                      <xs:annotation>
-                        <xs:documentation>Obecné nastavení  Obecné nastavení  Obecné nastavení</xs:documentation>
-                      </xs:annotation>
-                      <xs:complexType>
-                        <xs:choice maxOccurs="unbounded" minOccurs="0">
-                          <xs:element name="jmeno">
-                            <xs:complexType>
-                              <xs:simpleContent>
-                                <xs:extension base="xs:string">
-                                  <xs:attribute type="char" name="styl" use="required"/>
-                                </xs:extension>
-                              </xs:simpleContent>
-                            </xs:complexType>
-                          </xs:element>
-                          <xs:element type="char" name="uzivatelske_jmeno"/>
-                          <xs:element type="mail" name="email" use="required"/>
-                          <xs:element name="web">
-                            <xs:complexType>
-                              <xs:simpleContent>
-                                <xs:extension base="xs:string">
-                                  <xs:attribute type="xs:string" name="typ" use="optional"/>
-                                </xs:extension>
-                              </xs:simpleContent>
-                            </xs:complexType>
-                          </xs:element>
-                          <xs:element type="poh" name="pohlavi"/>
-                          <xs:element name="sprava_uctu">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element type="char" name="poverena_osoba"/>
-                                <xs:element type="EnableDisable" name="deaktivace_uctu"/>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                        </xs:choice>
-                        <xs:attribute type="xs:string" name="pismo" use="optional"/>
-                        <xs:attribute type="xs:byte" name="velpisma" use="optional"/>
-                      </xs:complexType>
-                    </xs:element>
-                    <xs:element name="zabezpeceni"> <!-- nastavení zabezpečeni -->
-                      <xs:annotation>
-                        <xs:documentation>nastavení zabezpečeni  nastavení zabezpečeni  nastavení zabezpečeni</xs:documentation>
-                      </xs:annotation>
-                      <xs:complexType>
+                <xs:element name="ucet" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
                         <xs:sequence>
-                          <xs:element type="EnableDisable" name="prihlaseni_pres_obrazek"/>
-                          <xs:element name="dalsi_zabezpeceni">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element name="nerozpoznane_prihlaseni">
-                                  <xs:complexType>
+                            <xs:element name="uzivatel">
+                                <xs:annotation>
+                                    <xs:documentation>Prihlaseny uzivatel  Prihlaseny uzivatel  Prihlaseny uzivatel</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element name="upozorneni">
-                                        <xs:complexType>
-                                          <xs:sequence>
-                                            <xs:element type="EnableDisable" name="email"/>
-                                            <xs:element type="EnableDisable" name="telefon"/>
-                                          </xs:sequence>
-                                        </xs:complexType>
-                                      </xs:element>
+                                        <xs:element type="xs:string" name="uzivatelske_jmeno" minOccurs="0"/>
+                                        <xs:element type="xs:string" name="prihl_jmeno" minOccurs="0"/>
+                                        <xs:element type="mail" name="email"/>
+                                        <xs:element type="jaz" name="jazyk"/>
+                                        <xs:element type="xs:string" name="zona"/>
                                     </xs:sequence>
-                                  </xs:complexType>
-                                </xs:element>
-                                <xs:element name="dvoufazove_prihlaseni">
-                                  <xs:complexType>
-                                    <xs:simpleContent>
-                                      <xs:extension base="xs:short">
-                                        <xs:attribute type="cislo" name="status" use="optional"/>
-                                      </xs:extension>
-                                    </xs:simpleContent>
-                                  </xs:complexType>
-                                </xs:element>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="nastaveni">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="obecne">
+                                            <xs:annotation>
+                                                <xs:documentation>Obecné nastavení  Obecné nastavení  Obecné nastavení</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                                <xs:choice maxOccurs="unbounded" minOccurs="0">
+                                                    <xs:element name="jmeno">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute type="xs:string" name="styl" use="optional"/>
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element type="xs:string" name="uzivatelske_jmeno"/>
+                                                    <xs:element type="mail" name="email"/>
+                                                    <xs:element name="web">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute type="xs:string" name="typ" use="optional"/>
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element type="xs:string" name="pohlavi"/>
+                                                    <xs:element name="sprava_uctu">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="poverena_osoba"/>
+                                                                <xs:element type="EnableDisable" name="deaktivace_uctu"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:choice>
+                                                <xs:attribute type="xs:string" name="pismo" use="optional"/>
+                                                <xs:attribute type="velikost" name="velpisma" use="optional"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="zabezpeceni">
+                                            <xs:annotation>
+                                                <xs:documentation>nastavení zabezpečeni  nastavení zabezpečeni  nastavení zabezpečeni</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:string" name="prihlaseni_pres_obrazek"/>
+                                                    <xs:element name="dalsi_zabezpeceni">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="nerozpoznane_prihlaseni">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="upozorneni">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element type="EnableDisable" name="email"/>
+                                                                                        <xs:element type="EnableDisable" name="telefon"/>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="dvoufazove_prihlaseni">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="cislo">
+                                                                                <xs:attribute type="EnableDisable" name="status" use="optional"/>
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="soukromi">
+                                            <xs:annotation>
+                                                <xs:documentation>nastavení soukromí  nastavení soukromí  nastavení soukromí</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="kdo_uvidi_muj_obsah">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="kdo" name="kdo_uvidi_vas_bud_prispev"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element type="kdo" name="kdo_me_muze_kontakt"/>
+                                                    <xs:element name="kdo_me_muze_vyhled">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="kdo" name="pomoci_emailu"/>
+                                                                <xs:element type="kdo" name="pomoci_tel_cisla"/>
+                                                                <xs:element type="EnableDisable" name="vyhledav_mimo_soc_sit"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="timeline">
+                                            <xs:annotation>
+                                                <xs:documentation>nastavení timeline  nastavení timeline  nastavení timeline</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="kdo_muze_pridavat_obsah_na_vasi_timeline">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="kdo" name="kdo"/>
+                                                                <xs:element type="EnableDisable" name="kontrol_prid_prisp"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="kdo_uvidi_obsah_na_vasi_timeline">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="kdo" name="kdo_uvidi_prisp_na_timeline"/>
+                                                                <xs:element type="kdo" name="prispev_ostat_na_vasi_timeline"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="oznaceni_od_uzivatelu">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="EnableDisable" name="kontr_ozn_ostat_prid_k_vasim_prisp"/>
+                                                                <xs:element type="kdo" name="kdo_uvi_prisp_kde_jste_oznac"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="blokovani">
+                                            <xs:annotation>
+                                                <xs:documentation>nastavení blokování uživatelů  nastavení blokování uživatelů  nastavení blokování uživatelů</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="seznam_omezenych_osob">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="uzivatelske_jmeno" maxOccurs="unbounded" minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="zablokovat_uzivatele">
+                                                        <xs:complexType mixed="true">
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="uzivatelske_jmeno" maxOccurs="unbounded" minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="jazyk">
+                                            <xs:annotation>
+                                                <xs:documentation>nastavení jazyka  nastavení jazyka  nastavení jazyka</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="jaz_nasat" name="nastavit_sit_v_jazyce"/>
+                                                    <xs:element name="automaticke_prekladani_prispevku">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="jaz_nasat" name="jazyk" maxOccurs="unbounded" minOccurs="0"/>
+                                                            </xs:sequence>
+                                                            <xs:attribute type="jaz" name="preklad" use="optional"/>
+                                                            <xs:attribute type="vyber" name="prekladat" use="optional"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="ovladane_jazyky">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="jaz_nasat" name="jazyk" maxOccurs="unbounded" minOccurs="0"/>
+                                                            </xs:sequence>
+                                                            <xs:attribute type="vyber" name="prekladat" use="optional"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="upozorneni">
+                                            <xs:annotation>
+                                                <xs:documentation>nastavení upozornění  nastavení upozornění  nastavení upozornění</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="tady">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute type="hlasitost" name="uphlasitost" use="optional"/>
+                                                                    <xs:attribute type="hlasitost" name="zphlas" use="optional"/>
+                                                                    <xs:attribute type="EnableDisable" name="oznaceni" use="optional"/>
+                                                                    <xs:attribute type="EnableDisable" name="komentar" use="optional"/>
+                                                                    <xs:attribute type="EnableDisable" name="sdileni" use="optional"/>
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="email">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute type="EnableDisable" name="oznaceni" use="optional"/>
+                                                                    <xs:attribute type="EnableDisable" name="komentar" use="optional"/>
+                                                                    <xs:attribute type="EnableDisable" name="sdileni" use="optional"/>
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="pc_mobil">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="plocha">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute type="xs:string" name="prohlizec" use="optional"/>
+                                                                                <xs:attribute type="EnableDisable" name="oznaceni" use="optional"/>
+                                                                                <xs:attribute type="EnableDisable" name="komentar" use="optional"/>
+                                                                                <xs:attribute type="EnableDisable" name="sdileni" use="optional"/>
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="mobil">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute type="EnableDisable" name="oznaceni" use="optional"/>
+                                                                                <xs:attribute type="EnableDisable" name="komentar" use="optional"/>
+                                                                                <xs:attribute type="EnableDisable" name="sdileni" use="optional"/>
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="sms">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute type="EnableDisable" name="oznaceni" use="optional"/>
+                                                                    <xs:attribute type="EnableDisable" name="komentar" use="optional"/>
+                                                                    <xs:attribute type="EnableDisable" name="sdileni" use="optional"/>
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
                         </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                    <xs:element name="soukromi"> <!-- nastavení soukromí -->
-                      <xs:annotation>
-                        <xs:documentation>nastavení soukromí  nastavení soukromí  nastavení soukromí</xs:documentation>
-                      </xs:annotation>
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="kdo_uvidi_muj_obsah">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element type="vyber" name="kdo_uvidi_vas_bud_prispev"/>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                          <xs:element type="vyber" name="kdo_me_muze_kontakt"/>
-                          <xs:element name="kdo_me_muze_vyhled">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element type="vyber" name="pomoci_emailu"/>
-                                <xs:element type="vyber" name="pomoci_tel_cisla"/>
-                                <xs:element type="EnableDisable" name="vyhledav_mimo_soc_sit"/>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                    <xs:element name="timeline">  <!-- nastavení timeline -->
-                      <xs:annotation>
-                        <xs:documentation>nastavení timeline  nastavení timeline  nastavení timeline</xs:documentation>
-                      </xs:annotation>
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="kdo_muze_pridavat_obsah_na_vasi_timeline">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element type="vyber" name="kdo"/>
-                                <xs:element type="EnableDisable" name="kontrol_prid_prisp"/>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                          <xs:element name="kdo_uvidi_obsah_na_vasi_timeline">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element type="vyber" name="kdo_uvidi_prisp_na_timeline"/>
-                                <xs:element type="vyber" name="prispev_ostat_na_vasi_timeline"/>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                          <xs:element name="oznaceni_od_uzivatelu">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element type="EnableDisable" name="kontr_ozn_ostat_prid_k_vasim_prisp"/>
-                                <xs:element type="vyber" name="kdo_uvi_prisp_kde_jste_oznac"/>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                    <xs:element name="blokovani"> <!-- nastavení blokování uživatelů -->
-                      <xs:annotation>
-                        <xs:documentation>nastavení blokování uživatelů  nastavení blokování uživatelů  nastavení blokování uživatelů</xs:documentation>
-                      </xs:annotation>
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="seznam_omezenych_osob">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element type="xs:string" name="uzivatelske_jmeno" maxOccurs="unbounded" minOccurs="0"/>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                          <xs:element type="xs:string" name="zablokovat_uzivatele"/>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                    <xs:element name="jazyk"> <!-- nastavení jazyka -->
-                      <xs:annotation>
-                        <xs:documentation>nastavení jazyka  nastavení jazyka  nastavení jazyka</xs:documentation>
-                      </xs:annotation>
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element type="jaz" name="nastavit_sit_v_jazyce"/>
-                          <xs:element name="automaticke_prekladani_prispevku">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element type="xs:string" name="jazyk" maxOccurs="unbounded" minOccurs="0"/>
-                              </xs:sequence>
-                              <xs:attribute type="jaz" name="preklad" use="optional"/>
-                              <xs:attribute type="povoleni" name="prekladat" use="optional"/>
-                            </xs:complexType>
-                          </xs:element>
-                          <xs:element name="ovladane_jazyky">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element type="svet" name="jazyk" maxOccurs="unbounded" minOccurs="0"/>
-                              </xs:sequence>
-                              <xs:attribute type="xs:string" name="prekladat" use="optional"/>
-                            </xs:complexType>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                    <xs:element name="upozorneni"> <!-- nastavení upozornění -->
-                      <xs:annotation>
-                        <xs:documentation>nastavení upozornění  nastavení upozornění  nastavení upozornění</xs:documentation>
-                      </xs:annotation>
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="tady">
-                            <xs:complexType>
-                              <xs:simpleContent>
-                                <xs:extension base="xs:string">
-                                  <xs:attribute type="hlasitost" name="uphlasitost" use="optional"/>
-                                  <xs:attribute type="hlasitost" name="zphlas" use="optional"/>
-                                  <xs:attribute type="EnableDisable" name="oznaceni" use="optional"/>
-                                  <xs:attribute type="EnableDisable" name="komentar" use="optional"/>
-                                  <xs:attribute type="EnableDisable" name="sdileni" use="optional"/>
-                                </xs:extension>
-                              </xs:simpleContent>
-                            </xs:complexType>
-                          </xs:element>
-                          <xs:element name="email">
-                            <xs:complexType>
-                              <xs:simpleContent>
-                                <xs:extension base="xs:string">
-                                  <xs:attribute type="EnableDisable" name="oznaceni" use="optional"/>
-                                  <xs:attribute type="EnableDisable" name="komentar" use="optional"/>
-                                  <xs:attribute type="EnableDisable" name="sdileni" use="optional"/>
-                                </xs:extension>
-                              </xs:simpleContent>
-                            </xs:complexType>
-                          </xs:element>
-                          <xs:element name="pc_mobil">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element name="plocha">
-                                  <xs:complexType>
-                                    <xs:simpleContent>
-                                      <xs:extension base="xs:string">
-                                        <xs:attribute type="char" name="prohlizec" use="optional"/>
-                                        <xs:attribute type="EnableDisable" name="oznaceni" use="optional"/>
-                                        <xs:attribute type="EnableDisable" name="komentar" use="optional"/>
-                                        <xs:attribute type="EnableDisable" name="sdileni" use="optional"/>
-                                      </xs:extension>
-                                    </xs:simpleContent>
-                                  </xs:complexType>
-                                </xs:element>
-                                <xs:element name="mobil">
-                                  <xs:complexType>
-                                    <xs:simpleContent>
-                                      <xs:extension base="xs:string">
-                                        <xs:attribute type="xs:string" name="oznaceni" use="optional"/>
-                                        <xs:attribute type="xs:string" name="komentar" use="optional"/>
-                                        <xs:attribute type="xs:string" name="sdileni" use="optional"/>
-                                      </xs:extension>
-                                    </xs:simpleContent>
-                                  </xs:complexType>
-                                </xs:element>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                          <xs:element name="sms">
-                            <xs:complexType>
-                              <xs:simpleContent>
-                                <xs:extension base="xs:short">
-                                  <xs:attribute type="xs:string" name="oznaceni" use="optional"/>
-                                  <xs:attribute type="xs:string" name="komentar" use="optional"/>
-                                  <xs:attribute type="xs:string" name="sdileni" use="optional"/>
-                                </xs:extension>
-                              </xs:simpleContent>
-                            </xs:complexType>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
+                    </xs:complexType>
+                </xs:element>
             </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <!-- Nastavení restrikcí -->
-  <xs:simpleType name="jaz"> <!-- omezeni volby jazyka -->
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="CZ"/>
-      <xs:enumeration value="EN"/>
-      <xs:enumeration value="SK"/>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="char"> <!-- Omezení nastavení znaků -->
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="utf-8"/>
-      <xs:enumeration value="windows-1258"/>
-      <xs:enumeration value="utf-7"/>
-      <xs:enumeration value="iso-8859"/>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="mail"> <!-- Omezení emailových adres -->
-    <xs:restriction base="xs:string">
-       <xs:pattern value="[^@]+@[^\.]+\..+"/> <!-- Regex ktery rozpozna emailovou adresu-->
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="poh"> <!-- Omezení pohlaví na muž/žena-->
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="jaz"> <!-- omezeni volby jazyka -->
         <xs:restriction base="xs:string">
-            <xs:pattern value="muž|žena|Muž|Žena|MUŽ|ŽENA"/>
+            <xs:enumeration value="CZ"/>
+            <xs:enumeration value="cs"/>
+            <xs:enumeration value="EN"/>
+            <xs:enumeration value="SK"/>
         </xs:restriction>
     </xs:simpleType>
-      <xs:simpleType name="EnableDisable">   <!-- Pouze hodnoty Enable/Disable-->
+    <xs:simpleType name="EnableDisable">   <!-- Pouze hodnoty Enable/Disable-->
         <xs:restriction base="xs:string"> 
             <xs:enumeration value="Enable" />
             <xs:enumeration value="Disable" />
         </xs:restriction> 
     </xs:simpleType>
-     <xs:simpleType name="cislo"> <!-- definice tvaru telefoniho cisla-->
+    <xs:simpleType name="hlasitost"> <!-- OmezenÃ­ nastavenÃ­ vÄ›kovÃ©ho omezenÃ­ -->
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="40"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="vyber">
+        <!-- Omezení nastavení protokolů -->
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ano" />
+            <xs:enumeration value="ne" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="jaz_nasat"> <!-- omezeni volby jazyka -->
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Cestina"/>
+            <xs:enumeration value="Finstina"/>
+            <xs:enumeration value="Anglictina"/>
+            <xs:enumeration value="Nemcina"/>
+            <xs:enumeration value="Slovenstina"/>
+        </xs:restriction>
+    </xs:simpleType>
+      <xs:simpleType name="kdo"> <!-- omezeni volby jazyka -->
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Jenom já"/>
+            <xs:enumeration value="Přátelé"/>
+            <xs:enumeration value="Vlastní"/>
+            <xs:enumeration value="Všichni"/>
+            <xs:enumeration value="Přátelé Přátel"/>
+        </xs:restriction>
+    </xs:simpleType>
+      <xs:simpleType name="cislo">
         <xs:restriction base="xs:integer">
             <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"/>
         </xs:restriction>
-    </xs:simpleType> 
-     <xs:simpleType name="vyber"> <!-- Omezení dosahu příspěvků -->
+    </xs:simpleType>
+    <xs:simpleType name="mail"> <!-- OmezenÃ­ nastavenÃ­ emailovÃ½ch adres -->
     <xs:restriction base="xs:string">
-      <xs:enumeration value="Přátelé"/>
-      <xs:enumeration value="Přátelé přátel"/>
-      <xs:enumeration value="Všichni"/>
-      <xs:enumeration value="Jenom já"/>
+       <xs:pattern value="[^@]+@[^\.]+\..+"/> <!-- Regex pro rozpoznÃ¡nÃ­ emailovÃ© adresy -->
     </xs:restriction>
   </xs:simpleType>
-   <xs:simpleType name="povoleni">   <!-- Povoleni k provedeni zmeny-->
-        <xs:restriction base="xs:string"> 
-            <xs:enumeration value="Ano" />
-            <xs:enumeration value="Ne" />
-        </xs:restriction> 
-    </xs:simpleType>
-    <xs:simpleType name="hlasitost"> <!-- Omezeni nastaveni hlasitosti­ -->
+  <xs:simpleType name="velikost"> <!-- OmezenÃ­ nastavenÃ­ vÄ›kovÃ©ho omezenÃ­ -->
         <xs:restriction base="xs:integer">
             <xs:minInclusive value="0"/>
-            <xs:maxInclusive value="30"/>
+            <xs:maxInclusive value="40"/>
         </xs:restriction>
     </xs:simpleType>
-  
 </xs:schema>

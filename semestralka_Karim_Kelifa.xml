@@ -35,14 +35,14 @@
                             <telefon>Disable</telefon>
                         </upozorneni>           
                     </nerozpoznane_prihlaseni>
-                    <dvoufazove_prihlaseni status="Enable">+420</dvoufazove_prihlaseni>
+                    <dvoufazove_prihlaseni status="Enable">722564885</dvoufazove_prihlaseni>
                 </dalsi_zabezpeceni>
             </zabezpeceni>
         
             <!-- nastavení soukromí -->
             <soukromi>
                 <kdo_uvidi_muj_obsah>
-                    <kdo_uvidi_vas_bud_prispev>Přátele</kdo_uvidi_vas_bud_prispev>
+                    <kdo_uvidi_vas_bud_prispev>Přátelé</kdo_uvidi_vas_bud_prispev>
                 </kdo_uvidi_muj_obsah>
                 <kdo_me_muze_kontakt>Všichni</kdo_me_muze_kontakt>
                 <kdo_me_muze_vyhled>
@@ -64,7 +64,7 @@
                 </kdo_uvidi_obsah_na_vasi_timeline>
                 <oznaceni_od_uzivatelu>
                     <kontr_ozn_ostat_prid_k_vasim_prisp>Disable</kontr_ozn_ostat_prid_k_vasim_prisp>
-                    <kdo_uvi_prisp_kde_jste_oznac>Vlastni</kdo_uvi_prisp_kde_jste_oznac>
+                    <kdo_uvi_prisp_kde_jste_oznac>Vlastní</kdo_uvi_prisp_kde_jste_oznac>
                 </oznaceni_od_uzivatelu>
             </timeline>
             <!-- nastavení blokování uživatelů -->
@@ -82,13 +82,13 @@
             <!-- nastavení jazyka -->
             <jazyk>
                 <nastavit_sit_v_jazyce>Cestina</nastavit_sit_v_jazyce>
-                <automaticke_prekladani_prispevku preklad="cs" prekladat="ano">
-                    <jazyk>Finština</jazyk>
-                    <jazyk>Němčina</jazyk>
+                <automaticke_prekladani_prispevku preklad="CZ" prekladat="ano">
+                    <jazyk>Finstina</jazyk>
+                    <jazyk>Nemcina</jazyk>
                 </automaticke_prekladani_prispevku>
                 <ovladane_jazyky prekladat="ne">
-                    <jazyk>Čeština</jazyk>
-                    <jazyk>Slovenština</jazyk>
+                    <jazyk>Cestina</jazyk>
+                    <jazyk>Slovenstina</jazyk>
                 </ovladane_jazyky>
             </jazyk>
         
@@ -100,7 +100,7 @@
                     <plocha prohlizec="Chrome" oznaceni="Enable" komentar="Enable" sdileni="Disable">Enable</plocha>
                     <mobil oznaceni="Enable" komentar="Enable" sdileni="Disable">enable</mobil>               
                 </pc_mobil>
-                <sms oznaceni="Enable" komentar="Enable" sdileni="Disable">+420</sms>
+                <sms oznaceni="Enable" komentar="Enable" sdileni="Disable">602681785</sms>
             </upozorneni>        
         </nastaveni>
     </ucet>
@@ -139,14 +139,14 @@
                             <telefon>Disable</telefon>
                         </upozorneni>           
                     </nerozpoznane_prihlaseni>
-                    <dvoufazove_prihlaseni status="Enable">+420</dvoufazove_prihlaseni>
+                    <dvoufazove_prihlaseni status="Enable">721458695</dvoufazove_prihlaseni>
                 </dalsi_zabezpeceni>
             </zabezpeceni>
         
             <!-- nastavení soukromí -->
             <soukromi>
                 <kdo_uvidi_muj_obsah>
-                    <kdo_uvidi_vas_bud_prispev>Přátele</kdo_uvidi_vas_bud_prispev>
+                    <kdo_uvidi_vas_bud_prispev>Přátelé</kdo_uvidi_vas_bud_prispev>
                 </kdo_uvidi_muj_obsah>
                 <kdo_me_muze_kontakt>Všichni</kdo_me_muze_kontakt>
                 <kdo_me_muze_vyhled>
@@ -168,14 +168,14 @@
                 </kdo_uvidi_obsah_na_vasi_timeline>
                 <oznaceni_od_uzivatelu>
                     <kontr_ozn_ostat_prid_k_vasim_prisp>Disable</kontr_ozn_ostat_prid_k_vasim_prisp>
-                    <kdo_uvi_prisp_kde_jste_oznac>Vlastni</kdo_uvi_prisp_kde_jste_oznac>
+                    <kdo_uvi_prisp_kde_jste_oznac>Vlastní</kdo_uvi_prisp_kde_jste_oznac>
                 </oznaceni_od_uzivatelu>
             </timeline>
             <!-- nastavení blokování uživatelů -->
             <blokovani>
                 <seznam_omezenych_osob>
-                    <ucet>Tomáš Smůla</ucet>
-                    <ucet>Jan Krátký</ucet>
+                   <uzivatelske_jmeno>Tomáš Smůla</uzivatelske_jmeno>
+                    <uzivatelske_jmeno>Jan Krátký</uzivatelske_jmeno>
                 </seznam_omezenych_osob>
                 <zablokovat_uzivatele></zablokovat_uzivatele>
             </blokovani>
@@ -184,12 +184,12 @@
             <jazyk>
                 <nastavit_sit_v_jazyce>Cestina</nastavit_sit_v_jazyce>
                 <automaticke_prekladani_prispevku preklad="cs" prekladat="ano">
-                    <jazyk>Finština</jazyk>
-                    <jazyk>Němčina</jazyk>
+                    <jazyk>Finstina</jazyk>
+                    <jazyk>Nemcina</jazyk>
                 </automaticke_prekladani_prispevku>
                 <ovladane_jazyky prekladat="ne">
-                    <jazyk>Čeština</jazyk>
-                    <jazyk>Slovenština</jazyk>
+                    <jazyk>Cestina</jazyk>
+                    <jazyk>Slovenstina</jazyk>
                 </ovladane_jazyky>
             </jazyk>
         
@@ -201,7 +201,7 @@
                     <plocha prohlizec="Chrome" oznaceni="Enable" komentar="Enable" sdileni="Disable">Enable</plocha>
                     <mobil oznaceni="Enable" komentar="Enable" sdileni="Disable">enable</mobil>               
                 </pc_mobil>
-                <sms oznaceni="Enable" komentar="Enable" sdileni="Disable">+420</sms>
+                <sms oznaceni="Enable" komentar="Enable" sdileni="Disable">523654895</sms>
             </upozorneni>        
         </nastaveni>
     </ucet>
@@ -239,14 +239,14 @@
                             <telefon>Disable</telefon>
                         </upozorneni>           
                     </nerozpoznane_prihlaseni>
-                    <dvoufazove_prihlaseni status="Enable">+420</dvoufazove_prihlaseni>
+                    <dvoufazove_prihlaseni status="Enable">722564887</dvoufazove_prihlaseni>
                 </dalsi_zabezpeceni>
             </zabezpeceni>
         
             <!-- nastavení soukromí -->
             <soukromi>
                 <kdo_uvidi_muj_obsah>
-                    <kdo_uvidi_vas_bud_prispev>Přátele</kdo_uvidi_vas_bud_prispev>
+                    <kdo_uvidi_vas_bud_prispev>Přátelé</kdo_uvidi_vas_bud_prispev>
                 </kdo_uvidi_muj_obsah>
                 <kdo_me_muze_kontakt>Všichni</kdo_me_muze_kontakt>
                 <kdo_me_muze_vyhled>
@@ -268,14 +268,14 @@
                 </kdo_uvidi_obsah_na_vasi_timeline>
                 <oznaceni_od_uzivatelu>
                     <kontr_ozn_ostat_prid_k_vasim_prisp>Disable</kontr_ozn_ostat_prid_k_vasim_prisp>
-                    <kdo_uvi_prisp_kde_jste_oznac>Vlastni</kdo_uvi_prisp_kde_jste_oznac>
+                    <kdo_uvi_prisp_kde_jste_oznac>Vlastní</kdo_uvi_prisp_kde_jste_oznac>
                 </oznaceni_od_uzivatelu>
             </timeline>
             <!-- nastavení blokování uživatelů -->
             <blokovani>
                 <seznam_omezenych_osob>
-                    <ucet>Tomáš Smůla</ucet>
-                    <ucet>Jan Krátký</ucet>
+                    <uzivatelske_jmeno>Tomáš Smůla</uzivatelske_jmeno>
+                    <uzivatelske_jmeno>Jan Krátký</uzivatelske_jmeno>
                 </seznam_omezenych_osob>
                 <zablokovat_uzivatele></zablokovat_uzivatele>
             </blokovani>
@@ -284,12 +284,12 @@
             <jazyk>
                 <nastavit_sit_v_jazyce>Cestina</nastavit_sit_v_jazyce>
                 <automaticke_prekladani_prispevku preklad="cs" prekladat="ano">
-                    <jazyk>Finština</jazyk>
-                    <jazyk>Němčina</jazyk>
+                    <jazyk>Finstina</jazyk>
+                    <jazyk>Nemcina</jazyk>
                 </automaticke_prekladani_prispevku>
                 <ovladane_jazyky prekladat="ne">
-                    <jazyk>Čeština</jazyk>
-                    <jazyk>Slovenština</jazyk>
+                    <jazyk>Cestina</jazyk>
+                    <jazyk>Slovenstina</jazyk>
                 </ovladane_jazyky>
             </jazyk>
         
@@ -301,7 +301,7 @@
                     <plocha prohlizec="Chrome" oznaceni="Enable" komentar="Enable" sdileni="Disable">Enable</plocha>
                     <mobil oznaceni="Enable" komentar="Enable" sdileni="Disable">enable</mobil>               
                 </pc_mobil>
-                <sms oznaceni="Enable" komentar="Enable" sdileni="Disable">+420</sms>
+                <sms oznaceni="Enable" komentar="Enable" sdileni="Disable">722564857</sms>
             </upozorneni>        
         </nastaveni>
     </ucet>
