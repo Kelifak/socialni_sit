@@ -1,15 +1,17 @@
-<!-- Odkaz na github: https://github.com/xklap006/Network/blob/master/semestralka.xsd -->
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!-- was: no XML declaration present -->
+<!-- Odkaz na github: https://github.com/Kelifak/socialni_sit/blob/master/semestralka_Karim_Kelifa.xsd-->
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="socialni_sit">
     <xs:annotation>
-      <xs:documentation>Odkaz na github: https://github.com/xklap006/Network/blob/master/semestralka.xsd</xs:documentation>
+      <xs:documentation>Odkaz na github: https://github.com/Kelifak/socialni_sit/blob/master/semestralka_Karim_Kelifa.xsd</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="nastaveni">
+        <xs:element name="nastaveni"> 
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="obecne">
+              <xs:element name="obecne"> <!-- Obecné nastavení --> 
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="jmeno">
@@ -45,7 +47,7 @@
                   <xs:attribute type="xs:byte" name="velpisma"/>
                 </xs:complexType>
               </xs:element>
-              <xs:element name="zabezpeceni">
+              <xs:element name="zabezpeceni"> <!-- nastavení zabezpečeni -->
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="prihlaseni">
@@ -87,7 +89,7 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-              <xs:element name="soukromi">
+              <xs:element name="soukromi"> <!-- nastavení soukromí -->
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="kdo_uvidi_muj_obsah">
@@ -110,7 +112,7 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-              <xs:element name="timeline">
+              <xs:element name="timeline"> <!-- nastavení timeline -->
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="kdo_muze_pridavat_obsah_na_vasi_timeline">
@@ -140,7 +142,7 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-              <xs:element name="blokovani">
+              <xs:element name="blokovani"> <!-- nastavení blokování uživatelů -->
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="seznam_omezenych_osob">
@@ -154,7 +156,7 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-              <xs:element name="jayzk">
+              <xs:element name="jayzk"> <!-- nastavení jazyka -->
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element type="xs:string" name="nastavit_sit_v_jazyce"/>
@@ -178,7 +180,7 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-              <xs:element name="upozorneni">
+              <xs:element name="upozorneni"> <!-- nastavení upozornění -->
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="tady">

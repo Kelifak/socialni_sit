@@ -1,95 +1,308 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <?xml-stylesheet type="text/xsl" href="semestralka_Karim_Kelifa.xsl"?>
-<!-- https://github.com/xklap006/Network/blob/master/semestralka.xsd--> 
+<!-- https://github.com/Kelifak/socialni_sit/blob/master/semestralka_Karim_Kelifa.xsd--> 
 <socialni_sit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="projekt_karim.xsd">
-    <nastaveni>
-        <!-- Obecné nastavení --> 
-        <obecne pismo="Calibri" velpisma="12">
-            <jmeno styl="tučné">Jan Štěstí</jmeno>
-            <uzivatelske_jmeno>Stistko</uzivatelske_jmeno>
+    <ucet>
+        <!-- Prihlaseny uzivatel --> 
+        <uzivatel>
+            <prihl_jmeno>Hanicka</prihl_jmeno>
+            <email>hanka.pohanka@gmail.com</email>
+            <jazyk>CZ</jazyk>
+            <zona>(GMT+01:00) Central Europe</zona>
+        </uzivatel>
+    
+        <nastaveni>
+            <!-- Obecné nastavení --> 
+            <obecne pismo="Calibri" velpisma="12">
+                <jmeno styl="tučné">Hanka Pohanka</jmeno>
+                <uzivatelske_jmeno>Hanicka</uzivatelske_jmeno>
+                <email>hanka.pohanka@gmail.com</email>
+                <web typ= "url">none</web>
+                <pohlavi>zena</pohlavi>
+                <sprava_uctu>
+                    <poverena_osoba>Jan Stistko</poverena_osoba>
+                    <deaktivace_uctu>Disable</deaktivace_uctu>
+                </sprava_uctu>
+            </obecne>
+        
+            <!-- nastavení zabezpečeni -->
+            <zabezpeceni>
+                <prihlaseni_pres_obrazek>Disable</prihlaseni_pres_obrazek>              
+                <dalsi_zabezpeceni>
+                    <nerozpoznane_prihlaseni>   
+                        <upozorneni>
+                            <email>Enable</email>
+                            <telefon>Disable</telefon>
+                        </upozorneni>           
+                    </nerozpoznane_prihlaseni>
+                    <dvoufazove_prihlaseni status="Enable">+420</dvoufazove_prihlaseni>
+                </dalsi_zabezpeceni>
+            </zabezpeceni>
+        
+            <!-- nastavení soukromí -->
+            <soukromi>
+                <kdo_uvidi_muj_obsah>
+                    <kdo_uvidi_vas_bud_prispev>Přátele</kdo_uvidi_vas_bud_prispev>
+                </kdo_uvidi_muj_obsah>
+                <kdo_me_muze_kontakt>Všichni</kdo_me_muze_kontakt>
+                <kdo_me_muze_vyhled>
+                    <pomoci_emailu>Přátelé</pomoci_emailu>
+                    <pomoci_tel_cisla>Všichni</pomoci_tel_cisla>
+                    <vyhledav_mimo_soc_sit>Disable</vyhledav_mimo_soc_sit>
+                </kdo_me_muze_vyhled>
+            </soukromi>
+        
+            <!-- nastavení timeline -->
+            <timeline>
+                <kdo_muze_pridavat_obsah_na_vasi_timeline>
+                    <kdo>Přátelé</kdo>
+                    <kontrol_prid_prisp>Enable</kontrol_prid_prisp>
+                </kdo_muze_pridavat_obsah_na_vasi_timeline>
+                <kdo_uvidi_obsah_na_vasi_timeline>
+                    <kdo_uvidi_prisp_na_timeline>Přátelé</kdo_uvidi_prisp_na_timeline>
+                    <prispev_ostat_na_vasi_timeline>Jenom já</prispev_ostat_na_vasi_timeline>
+                </kdo_uvidi_obsah_na_vasi_timeline>
+                <oznaceni_od_uzivatelu>
+                    <kontr_ozn_ostat_prid_k_vasim_prisp>Disable</kontr_ozn_ostat_prid_k_vasim_prisp>
+                    <kdo_uvi_prisp_kde_jste_oznac>Vlastni</kdo_uvi_prisp_kde_jste_oznac>
+                </oznaceni_od_uzivatelu>
+            </timeline>
+            <!-- nastavení blokování uživatelů -->
+            <blokovani>
+                <seznam_omezenych_osob>
+                    <ucet>Tomáš Smůla</ucet>
+                    <ucet>Jan Krátký</ucet>
+                </seznam_omezenych_osob>
+                <zablokovat_uzivatele></zablokovat_uzivatele>
+            </blokovani>
+        
+            <!-- nastavení jazyka -->
+            <jayzk>
+                <nastavit_sit_v_jazyce>Cestina</nastavit_sit_v_jazyce>
+                <automaticke_prekladani_prispevku preklad="cs" prekladat="ano">
+                    <jazyk>Finština</jazyk>
+                    <jazyk>Němčina</jazyk>
+                </automaticke_prekladani_prispevku>
+                <ovladane_jazyky prekladat="ne">
+                    <jazyk>Čeština</jazyk>
+                    <jazyk>Slovenština</jazyk>
+                </ovladane_jazyky>
+            </jayzk>
+        
+            <!-- nastavení upozornění -->
+            <upozorneni>
+                <tady uphlasitost="0" zphlas="10" oznaceni="Enable" komentar="Enable" sdileni="Enable">Enable</tady>
+                <email oznaceni="Enable" komentar="Disable" sdileni="Disable">jan.stistko@gmail.com</email>
+                <pc_mobil>
+                    <plocha prohlizec="Chrome" oznaceni="Enable" komentar="Enable" sdileni="Disable">Enable</plocha>
+                    <mobil oznaceni="Enable" komentar="Enable" sdileni="Disable">enable</mobil>               
+                </pc_mobil>
+                <sms oznaceni="Enable" komentar="Enable" sdileni="Disable">+420</sms>
+            </upozorneni>        
+        </nastaveni>
+    </ucet>
+    
+    <ucet>
+        <!-- Prihlaseny uzivatel --> 
+        <uzivatel>
+            <prihl_jmeno>Stistko</prihl_jmeno>
             <email>jan.stistko@gmail.com</email>
-            <web typ= "url">www.stesti.com</web>
-            <sprava_uctu>
-                <poverena_osoba>Tomáš Štěstí</poverena_osoba>
-                <deaktivace_uctu>Disable</deaktivace_uctu>
-            </sprava_uctu>
-        </obecne>
+            <jazyk>CZ</jazyk>
+            <zona>(GMT+01:00) Central Europe</zona>
+        </uzivatel>
+    
+        <nastaveni>
+            <!-- Obecné nastavení --> 
+            <obecne pismo="Calibri" velpisma="12">
+                <jmeno styl="tučné">Jan Štěstí</jmeno>
+                <uzivatelske_jmeno>Stistko</uzivatelske_jmeno>
+                <email>jan.stistko@gmail.com</email>
+                <web typ= "url">www.stesti.com</web>
+                <pohlavi>muz</pohlavi>
+                <sprava_uctu>
+                    <poverena_osoba>Tomáš Štěstí</poverena_osoba>
+                    <deaktivace_uctu>Disable</deaktivace_uctu>
+                </sprava_uctu>
+            </obecne>
         
-        <!-- nastavení zabezpečeni -->
-        <zabezpeceni>
-            <prihlaseni>
+            <!-- nastavení zabezpečeni -->
+            <zabezpeceni>
+             
                 <prihlaseni_pres_obrazek>Disable</prihlaseni_pres_obrazek>
-            </prihlaseni>
-            <dalsi_zabezpeceni>
-                <nerozpoznane_prihlaseni>   
-                    <upozorneni>
-                        <email>Enable</email>
-                        <telefon>Disable</telefon>
-                    </upozorneni>           
-                </nerozpoznane_prihlaseni>
-                <dvoufazove_prihlaseni status="Enable">+420</dvoufazove_prihlaseni>
-            </dalsi_zabezpeceni>
-        </zabezpeceni>
+                <dalsi_zabezpeceni>
+                    <nerozpoznane_prihlaseni>   
+                        <upozorneni>
+                            <email>Enable</email>
+                            <telefon>Disable</telefon>
+                        </upozorneni>           
+                    </nerozpoznane_prihlaseni>
+                    <dvoufazove_prihlaseni status="Enable">+420</dvoufazove_prihlaseni>
+                </dalsi_zabezpeceni>
+            </zabezpeceni>
         
-        <!-- nastavení soukromí -->
-        <soukromi>
-            <kdo_uvidi_muj_obsah>
-                <kdo_uvidi_vas_bud_prispev>Přátele</kdo_uvidi_vas_bud_prispev>
-            </kdo_uvidi_muj_obsah>
-            <kdo_me_muze_kontakt>Všichni</kdo_me_muze_kontakt>
-            <kdo_me_muze_vyhled>
-                <pomoci_emailu>Přátelé</pomoci_emailu>
-                <pomoci_tel_cisla>Všichni</pomoci_tel_cisla>
-                <vyhledav_mimo_soc_sit>Disable</vyhledav_mimo_soc_sit>
-            </kdo_me_muze_vyhled>
-        </soukromi>
+            <!-- nastavení soukromí -->
+            <soukromi>
+                <kdo_uvidi_muj_obsah>
+                    <kdo_uvidi_vas_bud_prispev>Přátele</kdo_uvidi_vas_bud_prispev>
+                </kdo_uvidi_muj_obsah>
+                <kdo_me_muze_kontakt>Všichni</kdo_me_muze_kontakt>
+                <kdo_me_muze_vyhled>
+                    <pomoci_emailu>Přátelé</pomoci_emailu>
+                    <pomoci_tel_cisla>Všichni</pomoci_tel_cisla>
+                    <vyhledav_mimo_soc_sit>Disable</vyhledav_mimo_soc_sit>
+                </kdo_me_muze_vyhled>
+            </soukromi>
         
-        <!-- nastavení timeline -->
-        <timeline>
-            <kdo_muze_pridavat_obsah_na_vasi_timeline>
-                <kdo>Přátelé</kdo>
-                <kontrol_prid_prisp>Enable</kontrol_prid_prisp>
-            </kdo_muze_pridavat_obsah_na_vasi_timeline>
-            <kdo_uvidi_obsah_na_vasi_timeline>
-                <kdo_uvidi_prisp_na_timeline>Přátelé</kdo_uvidi_prisp_na_timeline>
-                <prispev_ostat_na_vasi_timeline>Jenom já</prispev_ostat_na_vasi_timeline>
-            </kdo_uvidi_obsah_na_vasi_timeline>
-            <oznaceni_od_uzivatelu>
-                <kontr_ozn_ostat_prid_k_vasim_prisp>Disable</kontr_ozn_ostat_prid_k_vasim_prisp>
-                <kdo_uvi_prisp_kde_jste_oznac>Vlastni</kdo_uvi_prisp_kde_jste_oznac>
-            </oznaceni_od_uzivatelu>
-        </timeline>
-        <!-- nastavení blokování uživatelů -->
-        <blokovani>
-            <seznam_omezenych_osob>
-                <ucet>Tomáš Smůla</ucet>
-                <ucet>Jan Krátký</ucet>
-            </seznam_omezenych_osob>
-            <zablokovat_uzivatele></zablokovat_uzivatele>
-        </blokovani>
+            <!-- nastavení timeline -->
+            <timeline>
+                <kdo_muze_pridavat_obsah_na_vasi_timeline>
+                    <kdo>Přátelé</kdo>
+                    <kontrol_prid_prisp>Enable</kontrol_prid_prisp>
+                </kdo_muze_pridavat_obsah_na_vasi_timeline>
+                <kdo_uvidi_obsah_na_vasi_timeline>
+                    <kdo_uvidi_prisp_na_timeline>Přátelé</kdo_uvidi_prisp_na_timeline>
+                    <prispev_ostat_na_vasi_timeline>Jenom já</prispev_ostat_na_vasi_timeline>
+                </kdo_uvidi_obsah_na_vasi_timeline>
+                <oznaceni_od_uzivatelu>
+                    <kontr_ozn_ostat_prid_k_vasim_prisp>Disable</kontr_ozn_ostat_prid_k_vasim_prisp>
+                    <kdo_uvi_prisp_kde_jste_oznac>Vlastni</kdo_uvi_prisp_kde_jste_oznac>
+                </oznaceni_od_uzivatelu>
+            </timeline>
+            <!-- nastavení blokování uživatelů -->
+            <blokovani>
+                <seznam_omezenych_osob>
+                    <ucet>Tomáš Smůla</ucet>
+                    <ucet>Jan Krátký</ucet>
+                </seznam_omezenych_osob>
+                <zablokovat_uzivatele></zablokovat_uzivatele>
+            </blokovani>
         
-        <!-- nastavení jazyka -->
-        <jayzk>
-            <nastavit_sit_v_jazyce>Cestina</nastavit_sit_v_jazyce>
-            <automaticke_prekladani_prispevku preklad="cs" prekladat="ano">
-                <jazyk>Finština</jazyk>
-                <jazyk>Němčina</jazyk>
-            </automaticke_prekladani_prispevku>
-            <ovladane_jazyky prekladat="ne">
-                <jazyk>Čeština</jazyk>
-                <jazyk>Slovenština</jazyk>
-            </ovladane_jazyky>
-        </jayzk>
+            <!-- nastavení jazyka -->
+            <jayzk>
+                <nastavit_sit_v_jazyce>Cestina</nastavit_sit_v_jazyce>
+                <automaticke_prekladani_prispevku preklad="cs" prekladat="ano">
+                    <jazyk>Finština</jazyk>
+                    <jazyk>Němčina</jazyk>
+                </automaticke_prekladani_prispevku>
+                <ovladane_jazyky prekladat="ne">
+                    <jazyk>Čeština</jazyk>
+                    <jazyk>Slovenština</jazyk>
+                </ovladane_jazyky>
+            </jayzk>
         
-        <!-- nastavení upozornění -->
-        <upozorneni>
-            <tady uphlasitost="0" zphlas="10" oznaceni="Enable" komentar="Enable" sdileni="Enable">Enable</tady>
-            <email oznaceni="Enable" komentar="Disable" sdileni="Disable">jan.stistko@gmail.com</email>
-            <pc_mobil>
-                <plocha prohlizec="Chrome" oznaceni="Enable" komentar="Enable" sdileni="Disable">Enable</plocha>
-                <mobil oznaceni="Enable" komentar="Enable" sdileni="Disable">enable</mobil>               
-            </pc_mobil>
-            <sms oznaceni="Enable" komentar="Enable" sdileni="Disable">+420</sms>
-        </upozorneni>        
-    </nastaveni>
+            <!-- nastavení upozornění -->
+            <upozorneni>
+                <tady uphlasitost="0" zphlas="10" oznaceni="Enable" komentar="Enable" sdileni="Enable">Enable</tady>
+                <email oznaceni="Enable" komentar="Disable" sdileni="Disable">jan.stistko@gmail.com</email>
+                <pc_mobil>
+                    <plocha prohlizec="Chrome" oznaceni="Enable" komentar="Enable" sdileni="Disable">Enable</plocha>
+                    <mobil oznaceni="Enable" komentar="Enable" sdileni="Disable">enable</mobil>               
+                </pc_mobil>
+                <sms oznaceni="Enable" komentar="Enable" sdileni="Disable">+420</sms>
+            </upozorneni>        
+        </nastaveni>
+    </ucet>
+    
+    <ucet>
+        <!-- Prihlaseny uzivatel --> 
+        <uzivatel>
+            <prihl_jmeno>Tomasko</prihl_jmeno>
+            <email>tom125@gmail.com</email>
+            <jazyk>SK</jazyk>
+            <zona>(GMT+01:00) Central Europe</zona>
+        </uzivatel>
+    
+        <nastaveni>
+            <!-- Obecné nastavení --> 
+            <obecne pismo="Calibri" velpisma="12">
+                <jmeno styl="tučné">Tomas Štěstí</jmeno>
+                <uzivatelske_jmeno>Tomasko</uzivatelske_jmeno>
+                <email>tom125@gmail.com</email>
+                <pohlavi>muz</pohlavi>
+                <web typ= "url">www.jdizasvymsnem.cz</web>
+                <sprava_uctu>
+                    <poverena_osoba>none</poverena_osoba>
+                    <deaktivace_uctu>Disable</deaktivace_uctu>
+                </sprava_uctu>
+            </obecne>
+        
+            <!-- nastavení zabezpečeni -->
+            <zabezpeceni>
+                <prihlaseni_pres_obrazek>Disable</prihlaseni_pres_obrazek>
+                <dalsi_zabezpeceni>
+                    <nerozpoznane_prihlaseni>   
+                        <upozorneni>
+                            <email>Enable</email>
+                            <telefon>Disable</telefon>
+                        </upozorneni>           
+                    </nerozpoznane_prihlaseni>
+                    <dvoufazove_prihlaseni status="Enable">+420</dvoufazove_prihlaseni>
+                </dalsi_zabezpeceni>
+            </zabezpeceni>
+        
+            <!-- nastavení soukromí -->
+            <soukromi>
+                <kdo_uvidi_muj_obsah>
+                    <kdo_uvidi_vas_bud_prispev>Přátele</kdo_uvidi_vas_bud_prispev>
+                </kdo_uvidi_muj_obsah>
+                <kdo_me_muze_kontakt>Všichni</kdo_me_muze_kontakt>
+                <kdo_me_muze_vyhled>
+                    <pomoci_emailu>Přátelé</pomoci_emailu>
+                    <pomoci_tel_cisla>Všichni</pomoci_tel_cisla>
+                    <vyhledav_mimo_soc_sit>Disable</vyhledav_mimo_soc_sit>
+                </kdo_me_muze_vyhled>
+            </soukromi>
+        
+            <!-- nastavení timeline -->
+            <timeline>
+                <kdo_muze_pridavat_obsah_na_vasi_timeline>
+                    <kdo>Přátelé</kdo>
+                    <kontrol_prid_prisp>Enable</kontrol_prid_prisp>
+                </kdo_muze_pridavat_obsah_na_vasi_timeline>
+                <kdo_uvidi_obsah_na_vasi_timeline>
+                    <kdo_uvidi_prisp_na_timeline>Přátelé</kdo_uvidi_prisp_na_timeline>
+                    <prispev_ostat_na_vasi_timeline>Jenom já</prispev_ostat_na_vasi_timeline>
+                </kdo_uvidi_obsah_na_vasi_timeline>
+                <oznaceni_od_uzivatelu>
+                    <kontr_ozn_ostat_prid_k_vasim_prisp>Disable</kontr_ozn_ostat_prid_k_vasim_prisp>
+                    <kdo_uvi_prisp_kde_jste_oznac>Vlastni</kdo_uvi_prisp_kde_jste_oznac>
+                </oznaceni_od_uzivatelu>
+            </timeline>
+            <!-- nastavení blokování uživatelů -->
+            <blokovani>
+                <seznam_omezenych_osob>
+                    <ucet>Tomáš Smůla</ucet>
+                    <ucet>Jan Krátký</ucet>
+                </seznam_omezenych_osob>
+                <zablokovat_uzivatele></zablokovat_uzivatele>
+            </blokovani>
+        
+            <!-- nastavení jazyka -->
+            <jayzk>
+                <nastavit_sit_v_jazyce>Cestina</nastavit_sit_v_jazyce>
+                <automaticke_prekladani_prispevku preklad="cs" prekladat="ano">
+                    <jazyk>Finština</jazyk>
+                    <jazyk>Němčina</jazyk>
+                </automaticke_prekladani_prispevku>
+                <ovladane_jazyky prekladat="ne">
+                    <jazyk>Čeština</jazyk>
+                    <jazyk>Slovenština</jazyk>
+                </ovladane_jazyky>
+            </jayzk>
+        
+            <!-- nastavení upozornění -->
+            <upozorneni>
+                <tady uphlasitost="0" zphlas="10" oznaceni="Enable" komentar="Enable" sdileni="Enable">Enable</tady>
+                <email oznaceni="Enable" komentar="Disable" sdileni="Disable">jan.stistko@gmail.com</email>
+                <pc_mobil>
+                    <plocha prohlizec="Chrome" oznaceni="Enable" komentar="Enable" sdileni="Disable">Enable</plocha>
+                    <mobil oznaceni="Enable" komentar="Enable" sdileni="Disable">enable</mobil>               
+                </pc_mobil>
+                <sms oznaceni="Enable" komentar="Enable" sdileni="Disable">+420</sms>
+            </upozorneni>        
+        </nastaveni>
+    </ucet>
+    
+    
+    
 </socialni_sit>
