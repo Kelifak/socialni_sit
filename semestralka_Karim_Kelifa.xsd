@@ -1,0 +1,257 @@
+<!-- Odkaz na github: https://github.com/xklap006/Network/blob/master/semestralka.xsd -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="socialni_sit">
+    <xs:annotation>
+      <xs:documentation>Odkaz na github: https://github.com/xklap006/Network/blob/master/semestralka.xsd</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nastaveni">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="obecne">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="jmeno">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="styl"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="uzivatelske_jmeno"/>
+                    <xs:element type="xs:string" name="email"/>
+                    <xs:element name="web">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:anyURI">
+                            <xs:attribute type="xs:string" name="typ"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="sprava_uctu">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="poverena_osoba"/>
+                          <xs:element type="xs:string" name="deaktivace_uctu"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="pismo"/>
+                  <xs:attribute type="xs:byte" name="velpisma"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="zabezpeceni">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="prihlaseni">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="prihlaseni_pres_obrazek"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="dalsi_zabezpeceni">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="nerozpoznane_prihlaseni">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="upozorneni">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="email"/>
+                                      <xs:element type="xs:string" name="telefon"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="dvoufazove_prihlaseni">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:short">
+                                  <xs:attribute type="xs:string" name="status"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="soukromi">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="kdo_uvidi_muj_obsah">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="kdo_uvidi_vas_bud_prispev"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="kdo_me_muze_kontakt"/>
+                    <xs:element name="kdo_me_muze_vyhled">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="pomoci_emailu"/>
+                          <xs:element type="xs:string" name="pomoci_tel_cisla"/>
+                          <xs:element type="xs:string" name="vyhledav_mimo_soc_sit"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="timeline">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="kdo_muze_pridavat_obsah_na_vasi_timeline">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="kdo"/>
+                          <xs:element type="xs:string" name="kontrol_prid_prisp"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="kdo_uvidi_obsah_na_vasi_timeline">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="kdo_uvidi_prisp_na_timeline"/>
+                          <xs:element type="xs:string" name="prispev_ostat_na_vasi_timeline"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="oznaceni_od_uzivatelu">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="kontr_ozn_ostat_prid_k_vasim_prisp"/>
+                          <xs:element type="xs:string" name="kdo_uvi_prisp_kde_jste_oznac"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="blokovani">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="seznam_omezenych_osob">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="ucet" maxOccurs="unbounded" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="zablokovat_uzivatele"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="jayzk">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="nastavit_sit_v_jazyce"/>
+                    <xs:element name="automaticke_prekladani_prispevku">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="jazyk" maxOccurs="unbounded" minOccurs="0"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="preklad"/>
+                        <xs:attribute type="xs:string" name="prekladat"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ovladane_jazyky">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="jazyk" maxOccurs="unbounded" minOccurs="0"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="prekladat"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="upozorneni">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="tady">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:byte" name="uphlasitost"/>
+                            <xs:attribute type="xs:byte" name="zphlas"/>
+                            <xs:attribute type="xs:string" name="oznaceni"/>
+                            <xs:attribute type="xs:string" name="komentar"/>
+                            <xs:attribute type="xs:string" name="sdileni"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="email">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="oznaceni"/>
+                            <xs:attribute type="xs:string" name="komentar"/>
+                            <xs:attribute type="xs:string" name="sdileni"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="pc_mobil">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="plocha">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="prohlizec"/>
+                                  <xs:attribute type="xs:string" name="oznaceni"/>
+                                  <xs:attribute type="xs:string" name="komentar"/>
+                                  <xs:attribute type="xs:string" name="sdileni"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="mobil">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="oznaceni"/>
+                                  <xs:attribute type="xs:string" name="komentar"/>
+                                  <xs:attribute type="xs:string" name="sdileni"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="sms">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:short">
+                            <xs:attribute type="xs:string" name="oznaceni"/>
+                            <xs:attribute type="xs:string" name="komentar"/>
+                            <xs:attribute type="xs:string" name="sdileni"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

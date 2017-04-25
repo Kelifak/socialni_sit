@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?> 
-<?xml-stylesheet type="text/xsl" href="eduard_linhart.xsl"?>
-<!-- Odkaz na github: https://github.com/DOPLNIT --> 
+<?xml-stylesheet type="text/xsl" href="semestralka_Karim_Kelifa.xsl"?>
+<!-- https://github.com/xklap006/Network/blob/master/semestralka.xsd--> 
 <socialni_sit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="projekt_karim.xsd">
-    <nastaveni> 
+    <nastaveni>
+        <!-- Obecné nastavení --> 
         <obecne pismo="Calibri" velpisma="12">
             <jmeno styl="tučné">Jan Štěstí</jmeno>
             <uzivatelske_jmeno>Stistko</uzivatelske_jmeno>
@@ -13,6 +14,8 @@
                 <deaktivace_uctu>Disable</deaktivace_uctu>
             </sprava_uctu>
         </obecne>
+        
+        <!-- nastavení zabezpečeni -->
         <zabezpeceni>
             <prihlaseni>
                 <prihlaseni_pres_obrazek>Disable</prihlaseni_pres_obrazek>
@@ -27,6 +30,8 @@
                 <dvoufazove_prihlaseni status="Enable">+420</dvoufazove_prihlaseni>
             </dalsi_zabezpeceni>
         </zabezpeceni>
+        
+        <!-- nastavení soukromí -->
         <soukromi>
             <kdo_uvidi_muj_obsah>
                 <kdo_uvidi_vas_bud_prispev>Přátele</kdo_uvidi_vas_bud_prispev>
@@ -38,6 +43,8 @@
                 <vyhledav_mimo_soc_sit>Disable</vyhledav_mimo_soc_sit>
             </kdo_me_muze_vyhled>
         </soukromi>
+        
+        <!-- nastavení timeline -->
         <timeline>
             <kdo_muze_pridavat_obsah_na_vasi_timeline>
                 <kdo>Přátelé</kdo>
@@ -52,6 +59,7 @@
                 <kdo_uvi_prisp_kde_jste_oznac>Vlastni</kdo_uvi_prisp_kde_jste_oznac>
             </oznaceni_od_uzivatelu>
         </timeline>
+        <!-- nastavení blokování uživatelů -->
         <blokovani>
             <seznam_omezenych_osob>
                 <ucet>Tomáš Smůla</ucet>
@@ -59,6 +67,8 @@
             </seznam_omezenych_osob>
             <zablokovat_uzivatele></zablokovat_uzivatele>
         </blokovani>
+        
+        <!-- nastavení jazyka -->
         <jayzk>
             <nastavit_sit_v_jazyce>Cestina</nastavit_sit_v_jazyce>
             <automaticke_prekladani_prispevku preklad="cs" prekladat="ano">
@@ -70,6 +80,8 @@
                 <jazyk>Slovenština</jazyk>
             </ovladane_jazyky>
         </jayzk>
+        
+        <!-- nastavení upozornění -->
         <upozorneni>
             <tady uphlasitost="0" zphlas="10" oznaceni="Enable" komentar="Enable" sdileni="Enable">Enable</tady>
             <email oznaceni="Enable" komentar="Disable" sdileni="Disable">jan.stistko@gmail.com</email>
