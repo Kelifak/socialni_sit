@@ -5,7 +5,7 @@
     <ucet>
         <!-- Prihlaseny uzivatel --> 
         <uzivatel>
-            <prihl_jmeno>Hanicka</prihl_jmeno>
+            <uzivatelske_jmeno>Hanicka</uzivatelske_jmeno>
             <email>hanka.pohanka@gmail.com</email>
             <jazyk>CZ</jazyk>
             <zona>(GMT+01:00) Central Europe</zona>
@@ -17,7 +17,7 @@
                 <jmeno styl="tučné">Hanka Pohanka</jmeno>
                 <uzivatelske_jmeno>Hanicka</uzivatelske_jmeno>
                 <email>hanka.pohanka@gmail.com</email>
-                <web typ= "url">none</web>
+                <web typ="url">none</web>
                 <pohlavi>zena</pohlavi>
                 <sprava_uctu>
                     <poverena_osoba>Jan Stistko</poverena_osoba>
@@ -70,14 +70,17 @@
             <!-- nastavení blokování uživatelů -->
             <blokovani>
                 <seznam_omezenych_osob>
-                    <ucet>Tomáš Smůla</ucet>
-                    <ucet>Jan Krátký</ucet>
-                </seznam_omezenych_osob>
-                <zablokovat_uzivatele></zablokovat_uzivatele>
+                    <uzivatelske_jmeno>Tomáš Smůla</uzivatelske_jmeno>
+                    <uzivatelske_jmeno>Jan Krátký</uzivatelske_jmeno>
+                 </seznam_omezenych_osob>
+                <zablokovat_uzivatele>
+                    <uzivatelske_jmeno>Jan Smetana</uzivatelske_jmeno>
+                    <uzivatelske_jmeno>Kamil Bartoška</uzivatelske_jmeno>
+                </zablokovat_uzivatele>
             </blokovani>
         
             <!-- nastavení jazyka -->
-            <jayzk>
+            <jazyk>
                 <nastavit_sit_v_jazyce>Cestina</nastavit_sit_v_jazyce>
                 <automaticke_prekladani_prispevku preklad="cs" prekladat="ano">
                     <jazyk>Finština</jazyk>
@@ -87,7 +90,7 @@
                     <jazyk>Čeština</jazyk>
                     <jazyk>Slovenština</jazyk>
                 </ovladane_jazyky>
-            </jayzk>
+            </jazyk>
         
             <!-- nastavení upozornění -->
             <upozorneni>
@@ -105,7 +108,7 @@
     <ucet>
         <!-- Prihlaseny uzivatel --> 
         <uzivatel>
-            <prihl_jmeno>Stistko</prihl_jmeno>
+            <uzivatelske_jmeno>Stistko</uzivatelske_jmeno>
             <email>jan.stistko@gmail.com</email>
             <jazyk>CZ</jazyk>
             <zona>(GMT+01:00) Central Europe</zona>
@@ -178,7 +181,7 @@
             </blokovani>
         
             <!-- nastavení jazyka -->
-            <jayzk>
+            <jazyk>
                 <nastavit_sit_v_jazyce>Cestina</nastavit_sit_v_jazyce>
                 <automaticke_prekladani_prispevku preklad="cs" prekladat="ano">
                     <jazyk>Finština</jazyk>
@@ -188,7 +191,7 @@
                     <jazyk>Čeština</jazyk>
                     <jazyk>Slovenština</jazyk>
                 </ovladane_jazyky>
-            </jayzk>
+            </jazyk>
         
             <!-- nastavení upozornění -->
             <upozorneni>
@@ -278,7 +281,7 @@
             </blokovani>
         
             <!-- nastavení jazyka -->
-            <jayzk>
+            <jazyk>
                 <nastavit_sit_v_jazyce>Cestina</nastavit_sit_v_jazyce>
                 <automaticke_prekladani_prispevku preklad="cs" prekladat="ano">
                     <jazyk>Finština</jazyk>
@@ -288,7 +291,7 @@
                     <jazyk>Čeština</jazyk>
                     <jazyk>Slovenština</jazyk>
                 </ovladane_jazyky>
-            </jayzk>
+            </jazyk>
         
             <!-- nastavení upozornění -->
             <upozorneni>
