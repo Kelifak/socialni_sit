@@ -20,18 +20,18 @@
         {
         "uzivatel":[
         
-        <xsl:for-each select="ucet/uzivatel">
+        <xsl:for-each select="ucet">
             <xsl:sort select="ucet/uzivatel/uzivatelske_Jmeno" order="descending"/>
             
             {
-            "Přezdívka": "<xsl:value-of select="uzivatelske_jmeno" />",
-            "E-mail": "<xsl:value-of select="email" />",
-            "Jazyk": "<xsl:value-of select="jazyk" />"
+            "Přezdívka": "<xsl:value-of select="uzivatel/uzivatelske_jmeno" />",
+            "E-mail": "<xsl:value-of select="uzivatel/email" />",
+            "Jazyk": "<xsl:value-of select="uzivatel/jazyk" />"
             "-------Nastavení tohoto uživatele-----",
-            "Prave Jmeno":"<xsl:value-of select="/ucet/nastaveni/obecne/jmeno"/>",
-            "Web": ""<xsl:value-of select="ucet/nastaveni/obecne/web"/>"",
-            "Pohlavi": "<xsl:value-of select="pohlavi" />",             
-                  
+            "Prave Jmeno":"<xsl:value-of select="nastaveni/obecne/jmeno"/>",
+            "Web": "<xsl:value-of select="nastaveni/obecne/web"/>",
+            "Pohlavi": "<xsl:value-of select="nastaveni/obecne/pohlavi" />",             
+                    
             }<xsl:if test="position() != last()">,</xsl:if>
         </xsl:for-each>
         ]        
