@@ -1,0 +1,34 @@
+ {
+        "uzivatel":[
+        
+        
+            
+            {
+            "P?ezdívka": "Hanicka",
+            "Pohlavi": "zena",
+            "E-mail": "hanka.pohanka@gmail.com",
+            "Jazyk": "CZ",
+            "Prave Jmeno":"Hanka Pohanka",
+            "Web": "nemá web"
+            },
+            
+            {
+            "P?ezdívka": "Stistko",
+            "Pohlavi": "muz",
+            "E-mail": "jan.stistko@gmail.com",
+            "Jazyk": "CZ",
+            "Prave Jmeno":"Jan Št?stí",
+            "Web": "www.stesti.com"
+            },
+            
+            {
+            "P?ezdívka": "Tomasko",
+            "Pohlavi": "muz",
+            "E-mail": "tom125@gmail.com",
+            "Jazyk": "SK",
+            "Prave Jmeno":"Tomas Št?stí",
+            "Web": "www.jdizasvymsnem.cz"
+            }
+        ]       
+        }
+    

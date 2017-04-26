@@ -8,7 +8,6 @@
             <uzivatelske_jmeno>Hanicka</uzivatelske_jmeno>
             <email>hanka.pohanka@gmail.com</email>
             <jazyk>CZ</jazyk>
-            <zona>(GMT+01:00) Central Europe</zona>
         </uzivatel>
     
         <nastaveni>
@@ -111,7 +110,6 @@
             <uzivatelske_jmeno>Stistko</uzivatelske_jmeno>
             <email>jan.stistko@gmail.com</email>
             <jazyk>CZ</jazyk>
-            <zona>(GMT+01:00) Central Europe</zona>
         </uzivatel>
     
         <nastaveni>
@@ -209,10 +207,9 @@
     <ucet>
         <!-- Prihlaseny uzivatel --> 
         <uzivatel>
-            <prihl_jmeno>Tomasko</prihl_jmeno>
+            <uzivatelske_jmeno>Tomasko</uzivatelske_jmeno>
             <email>tom125@gmail.com</email>
             <jazyk>SK</jazyk>
-            <zona>(GMT+01:00) Central Europe</zona>
         </uzivatel>
     
         <nastaveni>

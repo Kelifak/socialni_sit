@@ -16,10 +16,8 @@
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element type="xs:string" name="uzivatelske_jmeno" minOccurs="0"/>
-                                        <xs:element type="xs:string" name="prihl_jmeno" minOccurs="0"/>
-                                        <xs:element type="mail" name="email"/>
+                                        <xs:element type="xs:string" name="email"/>
                                         <xs:element type="jaz" name="jazyk"/>
-                                        <xs:element type="xs:string" name="zona"/>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>

@@ -25,24 +25,15 @@
             
             {
             "Přezdívka": "<xsl:value-of select="uzivatel/uzivatelske_jmeno" />",
+            "Pohlavi": "<xsl:value-of select="nastaveni/obecne/pohlavi" />",
             "E-mail": "<xsl:value-of select="uzivatel/email" />",
-            "Jazyk": "<xsl:value-of select="uzivatel/jazyk" />"
-            "-------Nastavení tohoto uživatele-----",
+            "Jazyk": "<xsl:value-of select="uzivatel/jazyk" />",
             "Prave Jmeno":"<xsl:value-of select="nastaveni/obecne/jmeno"/>",
-            "Web": <xsl:choose>
-                <xsl:when test="nastaveni/obecne[web = 'none']">
-                    "nemá web"
-                </xsl:when>
-                <xsl:otherwise>
-                    "<xsl:value-of select="nastaveni/obecne/web"/>"    
-                </xsl:otherwise>     
-            </xsl:choose>,
-            "Pohlavi": "<xsl:value-of select="nastaveni/obecne/pohlavi" />",             
-                    
+            "Web": <xsl:choose><xsl:when test="nastaveni/obecne[web = 'none']">"nemá web"</xsl:when><xsl:otherwise>"<xsl:value-of select="nastaveni/obecne/web"/>"</xsl:otherwise>     
+            </xsl:choose>
             }<xsl:if test="position() != last()">,</xsl:if>
         </xsl:for-each>
-        ]        
+        ]       
         }
     </xsl:template>
-
 </xsl:stylesheet>
