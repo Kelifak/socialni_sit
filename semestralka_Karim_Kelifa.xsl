@@ -29,7 +29,14 @@
             "Jazyk": "<xsl:value-of select="uzivatel/jazyk" />"
             "-------Nastavení tohoto uživatele-----",
             "Prave Jmeno":"<xsl:value-of select="nastaveni/obecne/jmeno"/>",
-            "Web": "<xsl:value-of select="nastaveni/obecne/web"/>",
+            "Web": <xsl:choose>
+                <xsl:when test="nastaveni/obecne[web = 'none']">
+                    "nemá web"
+                </xsl:when>
+                <xsl:otherwise>
+                    "<xsl:value-of select="nastaveni/obecne/web"/>"    
+                </xsl:otherwise>     
+            </xsl:choose>,
             "Pohlavi": "<xsl:value-of select="nastaveni/obecne/pohlavi" />",             
                     
             }<xsl:if test="position() != last()">,</xsl:if>
