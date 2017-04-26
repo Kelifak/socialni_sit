@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+  <head>
+    <meta charset="Windows-1250">
+   <title>Dokumentace k projektu značkovací jazyky</title>
+  </head>
+  <body style="padding: 30px; background:#cd853f; color: white; font-weight:bold;">
+    <header>
+        <h1>Dokumentace k semestrálnímu projektu "Sociální síť" z předmětu Značkovací jazyky</h1>
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="#uvod">Úvod</a></li>
+          <li><a href="#metodika">Metodika</a></li>
+          <li><a href="#popis_elementu">Popis elementů</a></li>
+          <li><a href="#popis_atributu">Popis atributů</a></li>
+          <li><a href="#zaver">Závěr</a></li>
+          <li><a href="#paticka">Patička</a></li>
+        </ul>
+      </nav>
+   <article><br/>
+    <h2 id="uvod">Úvod</h2>
+    Tématem mé semestrální práce, jak už název napovídá, byla sociální síť. Konkrétně její nastavení. Toto téma jsem si vybral, protože na sociální síti tráví v dnešní době většina lidí mnoho hodin,
+    a tudíž se mi zdálo téma aktuální. Projekt jsem průběžně zálohoval pomocí GitHub, zálohu tedy najdete na  <a href="https://github.com/Kelifak/socialni_sit ">mém účtu</a>.
+    <br/><br/><br/>
+    
+    <h2 id="metodika">Metodika</h2>
+        <h3>Použité programy</h3>
+        Při tvorbě této semestrální práce jsem použil programy <a href="https://netbeans.org/">NetBeans IDE</a>,<a href="https://github.com//">GitHub</a> a poznámkový blok (Notepad od <a href="https://www.microsoft.com/cs-cz">Microsoft</a>).
+        
+        <h3>Použité webové stránky</h3>
+        Informace jsem hledal na webových stránkách <a href="https://www.w3schools.com/">w3schools</a> k ověření validace jsem používal <a href="http://www.freeformatter.com/">freeformatter</a>.        
+    <br/><br/>
+    
+    <h2 id="popis_elementu">Popis elementů</h2>
+    <table>                       
+      <tr><td>ucet</td><td>Obsahuje všechny ostatní elementy - na stejné úrovni uživatele a ní</td></tr>
+      <tr><td>uzivatel</td><td>Obsahuje základní údaje o uživateli - elementy uživatelské jméno, email a jazyk</td></tr>
+      <tr><td>uzivatelske_jmeno</td><td>Obsahuje jméno (přezdívku)přihlášeného uživatele</td></tr>
+      <tr><td>email</td><td>E-mail přihlášeného uživatele</td></tr>
+      <tr><td>jazyk</td><td>Jazyk, kterým se zobrazují příspěvky</td></tr>
+      <tr><td>nastavení</td><td>Obsahuje informace o nastavení, které má nakonfigurován přihlášený uživatel.</td></tr>
+      <tr><td>obecne</td><td>Obecne nastaveni uzivatele, pravé jméno uživatele, nastaveny email a uzivatelske jmeno, web, deaktivace účtu</td></tr> 
+      <tr><td>jmeno</td><td>Zde je uložené pravé jméno uživatele</td></tr>
+      <tr><td>web</td><td>Uložený soukromý veb uživatele, pokuď nějaký má</td></tr>
+      <tr><td>pohlaví</td><td>Pohlaví uživatele</td></tr>
+      <tr><td>sprava_uctu</td><td>Obsahuje elementy poverena osoba a deaktivace účtu</td></tr>
+      <tr><td>poverena_osoba</td><td>Jiný uživatel sociální sítě, který v případě potřeby může převzít správu účtu</td></tr>
+      <tr><td>deaktivace_uctu</td><td>Možnost deaktivace účtu</td></tr>
+      <tr><td>zabezpeceni</td><td>nastavení zabezpečení účtu</td></tr>
+      <tr><td>prihlaseni_pres_obrazek</td><td>Moznost prihlaseni se jen klepnutim na profilový obrázek (bez hesla). Nabívá hodnot Enable/Disable</td></tr>
+      <tr><td>dalsi_zabezpeceni</td><td>Pokrocile nastaveni zabezpeceni</td></tr>
+      <tr><td>nerozpoznane_prihlaseni</td><td>Obsahuje elementy upozornění</td></tr>
+      <tr><td>upozorneni</td><td>Možnost výběru formy upozornění emailem nebo telefonem</td></tr>
+      <tr><td>telefon</td><td>Možnost nastavení upozornění na telefon</td></tr>
+      <tr><td>dvoufazove_prihlaseni</td><td>možnost nastavení přihlášení s ověřovací sms a nastavení telefoního čísla</td></tr>
+      <tr><td>soukromi</td><td>Nastavení soukromí uživatele - kdo může vyhledat uživatele</td></tr>
+      <tr><td>kdo_uvidi_muj_obsah</td><td>nastavení toho kdo uvidí aktivitu uživatele na sociální síti</td></tr>
+      <tr><td>kdo_uvidi_vas_bud_prispev</td><td>Nastaveni dosahu příspěvků, které uživatel přidá</td></tr>
+      <tr><td>kdo_uvidi_obsah_na_vasi_timeline</td><td>Obsahuje vnořené elementy kdo_uvidi_prisp_na_timeline a prispev_ostat_na_vasi_timeline</td></tr>
+      <tr><td>kdo_uvidi_prisp_na_timeline</td><td>Nastaveni toho, kdo uvidi příspěvky uživatele na jeho timeline</td></tr>
+      <tr><td>prispev_ostat_na_vasi_timeline</td><td>Nastaveni toho, kdo uvidi příspěvky ostatních na timeline uživatele</td></tr>
+      <tr><td>kontr_ozn_ostat_prid_k_vasim_prisp</td><td>Kontrola označení lidí pod příspěvky uživatele</td></tr>
+      <tr><td>kdo_uvi_prisp_kde_jste_oznac</td><td>Kdo uvidí příspěvky na kterých je uživatel označen</td></tr>
+      <tr><td>blokovani</td><td>obsahuje elementy seznam_omezenych_osob a zablokovat_uzivatele </td></tr>
+      <tr><td>seznam_omezenych_osob</td><td>Seznam uživatelů, které má uživatel v přátelích, ale oni neuvidí jeho příspěvky</td></tr>
+      <tr><td>zablokovat_uzivatele</td><td>Zablokuje ostatní uživatele, kteří nebudou moci nijak navázat kontakt</td></tr>
+      <tr><td>nastavit_sit_v_jazyce</td><td>Jazyk ve kterém bude aplikace defaultně nastavena</td></tr>
+      <tr><td>automaticke_prekladani_prispevku</td><td>Jazyky, které bude automaticky aplikace překládat</td></tr>
+      <tr><td>ovladane_jazyky</td><td>První útočník</td></tr>
+      <tr><td>tady</td><td>Druhý útočník</td></tr>
+    </table>
+     </br>
+     </br>
+     <h3 id="popis_atributu">Popis atributů</h3>
+     <table>
+      <tr><td>spravce</td><td>Obsahuje jméno správce</td></tr>
+      <tr><td>ID</td><td>ID ligy - element liga</td></tr>
+      <tr><td>soutez</td><td>Obsahuje číslo soutěže - element liga</td></tr>
+      <tr><td>vlastnik</td><td>Vlastník týmu - element název</td></tr>
+      <tr><td>tituly</td><td>Počet titulů týmu - element název</td></tr>
+      <tr><td>rok_zalozeni</td><td>Rok založení týmu - element název</td></tr>
+      <tr><td>kapacita</td><td>Kapacita stadionu - element stadion</td></tr>
+      <tr><td>poloha</td><td>Poloha stadionu - element stadion</td></tr>
+      <tr><td>hodnoceni</td><td>Hodnocení manažera - element manazer</td></tr>
+      <tr><td>delka_kontraktu</td><td>Délka kontraktu  trenéra - element trener/hlavni</td></tr>
+      <tr><td>stranka</td><td>Obsahuje link webové stránky - element informace</td></tr>   
+     </table>
+    
+     </br>            
+     </br>
+    
+    <h2 id="zaver">Závěr</h2>
+    <p>Soubor XML byl tranformován za pomoci jazyku HTML a XSLT. Soubor byl nastylován pomocí CSS.</p>
+    
+   
+   </article>
+   </br>  
+   <footer style="font-style: italic;" id="paticka">
+   Karim Kelifa/ CZU
+   </footer>
+    
+    
+    
+    
+  </body>
+</html>
