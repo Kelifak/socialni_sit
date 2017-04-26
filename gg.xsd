@@ -53,7 +53,7 @@
                                                             </xs:simpleContent>
                                                         </xs:complexType>
                                                     </xs:element>
-                                                    <xs:element type="pohl" name="pohlavi"/>
+                                                    <xs:element type="xs:string" name="pohlavi"/>
                                                     <xs:element name="sprava_uctu">
                                                         <xs:complexType>
                                                             <xs:sequence>
@@ -297,7 +297,6 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-    <!-- nastavení restrikcí -->
     <xs:simpleType name="jaz"> <!-- omezeni volby jazyka -->
         <xs:restriction base="xs:string">
             <xs:enumeration value="CZ"/>
@@ -312,13 +311,14 @@
             <xs:enumeration value="Disable" />
         </xs:restriction> 
     </xs:simpleType>
-    <xs:simpleType name="hlasitost"> <!-- omezeni hlasitosti­ -->
+    <xs:simpleType name="hlasitost"> <!-- OmezenÃ­ nastavenÃ­ vÄ›kovÃ©ho omezenÃ­ -->
         <xs:restriction base="xs:integer">
             <xs:minInclusive value="0"/>
             <xs:maxInclusive value="40"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:simpleType name="vyber"> <!-- Omezení vyberu na ano nebo ne -->
+    <xs:simpleType name="vyber">
+        <!-- Omezení nastavení protokolů -->
         <xs:restriction base="xs:string">
             <xs:enumeration value="ano" />
             <xs:enumeration value="ne" />
@@ -333,7 +333,7 @@
             <xs:enumeration value="Slovenstina"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:simpleType name="kdo"> <!-- omezeni lidi kteri mohou videt prispevky -->
+      <xs:simpleType name="kdo"> <!-- omezeni volby jazyka -->
         <xs:restriction base="xs:string">
             <xs:enumeration value="Jenom já"/>
             <xs:enumeration value="Přátelé"/>
@@ -342,25 +342,20 @@
             <xs:enumeration value="Přátelé Přátel"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:simpleType name="cislo">
+      <xs:simpleType name="cislo">
         <xs:restriction base="xs:integer">
             <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:simpleType name="mail"> <!-- validace e-mailove adresy -->
-        <xs:restriction base="xs:string">
-            <xs:pattern value="[^@]+@[^\.]+\..+"/> <!-- Regex pro rozpoznÃ¡nÃ­ emailovÃ© adresy -->
-        </xs:restriction>
-    </xs:simpleType>
-    <xs:simpleType name="velikost"> <!-- omezení velikosti písma­ -->
+    <xs:simpleType name="mail"> <!-- OmezenÃ­ nastavenÃ­ emailovÃ½ch adres -->
+    <xs:restriction base="xs:string">
+       <xs:pattern value="[^@]+@[^\.]+\..+"/> <!-- Regex pro rozpoznÃ¡nÃ­ emailovÃ© adresy -->
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="velikost"> <!-- OmezenÃ­ nastavenÃ­ vÄ›kovÃ©ho omezenÃ­ -->
         <xs:restriction base="xs:integer">
             <xs:minInclusive value="0"/>
             <xs:maxInclusive value="40"/>
-        </xs:restriction>
-    </xs:simpleType>
-    <xs:simpleType name="pohl"> <!-- omezení pohlavi -->
-        <xs:restriction base="xs:string">
-            <xs:pattern value="muz|zena|MUZ|ZENA|Muz|Zena"/>
         </xs:restriction>
     </xs:simpleType>
 </xs:schema>

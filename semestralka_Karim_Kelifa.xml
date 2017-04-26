@@ -72,7 +72,7 @@
                 <seznam_omezenych_osob>
                     <uzivatelske_jmeno>Tomáš Smůla</uzivatelske_jmeno>
                     <uzivatelske_jmeno>Jan Krátký</uzivatelske_jmeno>
-                 </seznam_omezenych_osob>
+                </seznam_omezenych_osob>
                 <zablokovat_uzivatele>
                     <uzivatelske_jmeno>Jan Smetana</uzivatelske_jmeno>
                     <uzivatelske_jmeno>Kamil Bartoška</uzivatelske_jmeno>
@@ -174,7 +174,7 @@
             <!-- nastavení blokování uživatelů -->
             <blokovani>
                 <seznam_omezenych_osob>
-                   <uzivatelske_jmeno>Tomáš Smůla</uzivatelske_jmeno>
+                    <uzivatelske_jmeno>Tomáš Smůla</uzivatelske_jmeno>
                     <uzivatelske_jmeno>Jan Krátký</uzivatelske_jmeno>
                 </seznam_omezenych_osob>
                 <zablokovat_uzivatele></zablokovat_uzivatele>
