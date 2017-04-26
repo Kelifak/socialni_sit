@@ -9,7 +9,6 @@
             <email>hanka.pohanka@gmail.com</email>
             <jazyk>CZ</jazyk>
         </uzivatel>
-    
         <nastaveni>
             <!-- Obecné nastavení --> 
             <obecne pismo="Calibri" velpisma="12">
@@ -120,7 +119,7 @@
                 <email>jan.stistko@gmail.com</email>
                 <web typ= "url">www.stesti.com</web>
                 <pohlavi>muz</pohlavi>
-                <sprava_uctu>
+                <sprava_uctu>    
                     <poverena_osoba>Tomáš Štěstí</poverena_osoba>
                     <deaktivace_uctu>Disable</deaktivace_uctu>
                 </sprava_uctu>
